@@ -1,0 +1,29 @@
+mutation HandelOrder($id: String!) {
+  handelOrder(id: $id) {
+    errors {
+      field
+      message
+    }
+    order {
+      id
+      created_date
+      seller {
+        id
+        name
+        privilege
+      }
+      soldItems{
+        color
+        id
+        name
+        soldPrice
+        quantity
+        buyPrice
+        minPrice
+        item{
+          id
+        }
+      }
+    }
+  }
+}

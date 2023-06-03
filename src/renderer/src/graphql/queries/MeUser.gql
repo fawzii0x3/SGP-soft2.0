@@ -1,0 +1,7 @@
+query MeUser{
+  meUser {
+    id
+    name
+    privilege
+  }
+}

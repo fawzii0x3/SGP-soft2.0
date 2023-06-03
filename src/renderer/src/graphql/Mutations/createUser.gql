@@ -1,0 +1,13 @@
+mutation CreateUser($data:UserInput!){
+  createUser(data: $data) {
+    errors {
+      target
+      message
+    }
+    user {
+      id
+      name
+      privilege
+    }
+  }
+}

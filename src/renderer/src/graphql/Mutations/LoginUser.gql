@@ -1,0 +1,13 @@
+mutation Login($data:UserLogin!) {
+  login(data: $data) {
+    errors {
+      target
+      message
+    }
+    user {
+      id
+      name
+      privilege
+    }
+  }
+}

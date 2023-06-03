@@ -1,0 +1,27 @@
+mutation EditItem($data: UpdateItemInput!, $id: String!) {
+  EditItem(id: $id, data: $data) {
+    errors {
+      target
+      message
+    }
+    item {
+      id
+      model
+      color
+      minQuantity
+      minPrice
+      maxPrice
+      buyPrice
+      quantity
+      selected
+      brand {
+        id
+        name
+      }
+      supplier {
+        id
+        name
+      }
+    }
+  }
+}

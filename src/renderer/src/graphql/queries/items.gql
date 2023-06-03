@@ -1,0 +1,21 @@
+query Items {
+  items {
+    id
+    brand {
+      id
+      name
+    }
+    model
+    color
+    minQuantity
+    minPrice
+    maxPrice
+    buyPrice
+    quantity
+    selected
+    supplier {
+      id
+      name
+    }
+  }
+}

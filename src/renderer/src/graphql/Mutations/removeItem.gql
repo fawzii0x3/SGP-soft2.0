@@ -1,0 +1,23 @@
+mutation removeItem($id: String!) {
+  removeItem(id: $id) {
+    id
+    created_date
+    seller {
+      id
+      name
+      privilege
+    }
+    soldItems {
+      color
+      id
+      name
+      soldPrice
+      quantity
+      buyPrice
+      minPrice
+      item {
+        id
+      }
+    }
+  }
+}

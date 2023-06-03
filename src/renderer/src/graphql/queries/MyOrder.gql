@@ -1,0 +1,23 @@
+query MyOrder {
+  MyOrder {
+    id
+    created_date
+    seller {
+      id
+      name
+      privilege
+    }
+    soldItems {
+      id
+      name
+      quantity
+      soldPrice
+      color
+      buyPrice
+      minPrice
+      item{
+        id
+      }
+    }
+  }
+}

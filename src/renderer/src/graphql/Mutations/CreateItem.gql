@@ -1,0 +1,27 @@
+mutation CreateItem($data: CreateItemInput!) {
+  createItem(data: $data) {
+    errors {
+      target
+      message
+    }
+    item {
+      id
+      model
+      color
+      minQuantity
+      minPrice
+      maxPrice
+      buyPrice
+      quantity
+      selected
+      brand {
+        id
+        name
+      }
+      supplier {
+        id
+        name
+      }
+    }
+  }
+}
